@@ -124,15 +124,62 @@ body.news .latestNews{
     margin-left: 25px;
     margin-right: 25px;
     border-radius: 20px;
-
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "img" "text";
 }
 body.news .latestNews img{
     size: 100%;
+    grid-area: "img";
+    border-radius: 10px;
+    padding: 10px;
     
 }
 
-body.news .latestNews p{
-    background-color: azure;
+body.news .latestNews .latestNewsText{
+    background-color: aqua;
+    grid-area: "text";
+    padding: 10px;
+}
+
+body.news .latestNews .flexContainer{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: auto;
+    padding-top: 10px;
+    gap: 15px;
+}
+body.news .latestNews .news1{
+    background-color: white;
+    width: 375px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+body.news .latestNews .flexContainer h2{
+    padding-bottom: 10px;
+    text-align: center;
+}
+body.news .latestNews .news2{
+    background-color: white;
+    width: 375px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+body.news .latestNews .stayTuned{
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+body.news .latestNews .stayTuned p{
+    margin: 10px;
 }
 
 body.news .stats{
@@ -140,14 +187,45 @@ body.news .stats{
     background-color: pink;
     margin-left: 25px;
     border-radius: 20px;
+    padding: 10px;
 }
+body.news .stats table{
+    border-spacing: 0;
+    width: 100%;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+body.news .stats thead{
+    background-color: gray;
+    text-align: center;
+}
+
+body.news .stats tbody{
+    background-color: white;
+    text-align:  center;
+}
+
 body.news .diagram{
     grid-area: diagram;
     background-color: greenyellow;
     margin-right: 25px;
     border-radius: 20px;
+    padding: 10px;
 }
+
+body.news .diagram p{
+    margin-top: 10px;
+}
+
+body.news .diagram img{
+    width: 40vw;
+    border-radius: 10px;
+}
+
+
 body.news footer{
     grid-area: footer;
     background-color: gray;
+    padding: 10px;
 }
