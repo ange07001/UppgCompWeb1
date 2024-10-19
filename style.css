@@ -127,7 +127,7 @@ body.news .Container{
 
 body.news .latestNews{
     grid-area: latestNews;
-    background-color: aqua;
+    background-color: #4c5454;
     margin-left: 100px;
     margin-right: 100px;
     border-radius: 20px;
@@ -148,7 +148,7 @@ body.news .latestNews img{
 }
 
 body.news .latestNews .latestNewsText{
-    background-color: aqua;
+    background-color: #4c5454;
     grid-area: "text";
     padding: 10px;
 }
@@ -182,8 +182,7 @@ body.news .latestNews .news2{
 
 body.news .latestNews .stayTuned{
     margin-top: 15px;
-    background-color: white;
-    border-radius: 10px;
+
 }
 
 body.news .latestNews .stayTuned p{
@@ -192,7 +191,7 @@ body.news .latestNews .stayTuned p{
 
 body.news .stats{
     grid-area: stats;
-    background-color: pink;
+    background-color: #457b9d;
     margin-left: 100px;
     border-radius: 20px;
     padding: 10px;
@@ -217,7 +216,7 @@ body.news .stats tbody{
 
 body.news .diagram{
     grid-area: diagram;
-    background-color: greenyellow;
+    background-color:  #a8dadc;
     margin-right: 100px;
     border-radius: 20px;
     padding: 10px;
@@ -226,11 +225,19 @@ body.news .diagram{
 
 body.news .diagram p{
     margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 body.news .diagram img{
-    width: 40vw;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
     border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* CAREER.html*/
@@ -253,7 +260,7 @@ body.career .Container{
 
 body.career .WhyWorkHere{
     grid-area: WhyWorkHere;
-    background-color: aqua;
+    background-color: #457b9d;
     padding: 10px;
     margin-left: 100px;
     margin-right: 100px;
@@ -263,7 +270,7 @@ body.career .WhyWorkHere{
 
 body.career .AvailableJobs{
     grid-area: AvailableJobs;
-    background-color: pink;
+    background-color:  #a8dadc;
     padding: 10px;
     margin-left: 100px;
     margin-right: 100px;
@@ -273,7 +280,7 @@ body.career .AvailableJobs{
 
 body.career .JobRequirements{
     grid-area: JobRequirements;
-    background-color: greenyellow;
+    background-color: #4c5454;
     padding: 10px;
     margin-left: 100px;
     margin-right: 100px;
@@ -281,9 +288,11 @@ body.career .JobRequirements{
     box-shadow: 1px 1px 15px gray;
 }
 
+
+
 body.career .JobBenefits{
     grid-area: JobBenefits;
-    background-color: orange;
+    background-color: #4c5454;
     padding: 10px;
     margin-left: 100px;
     margin-right: 100px;
@@ -293,7 +302,7 @@ body.career .JobBenefits{
 
 body.career .ApplyForJob{
     grid-area: ApplyForJob;
-    background-color: yellow;
+    background-color:  #457b9d;
     padding: 10px;
     margin-left: 100px;
     margin-right: 100px;
@@ -301,11 +310,162 @@ body.career .ApplyForJob{
     box-shadow: 1px 1px 15px gray;
 }
 
-body.career .ApplyForJob input{
+body.career .ApplyForJob textarea{
     width: 100%;
-    height: 75%;
+    height: 100%;
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
     box-sizing: border-box;
+}
+
+body.career ul{
+    padding-left: 20px;
+}
+
+/* ABOUT.html*/
+
+body.about .Container{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 6fr 3fr 200px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "OurMission Offices"
+    "Contact Contact"
+    "footer footer ";
+    gap: 50px;
+}
+
+body.about .OurMission{
+    grid-area: OurMission;
+    background-color: #4c5454;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px gray;
+}
+
+body.about .Offices{
+    grid-area: Offices;
+    background-color: #457b9d;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px gray;
+}
+
+body.about .Contact{
+    grid-area: Contact;
+    background-color: #a8dadc;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px gray;
+}
+
+body.about .OurMission img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+}
+
+body.about .Offices img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+}
+
+body.about .Contact img{
+    width: 33%;
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+    float: left;
+}
+
+body.about .Contact .ContactInfo{
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+/* SURPRISE.html*/
+
+body.surprise .Container{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto
+    3fr 200px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "Parallax Parallax"
+    "NoJobForYou NoJobForYou"
+    "Parallax2 Parallax2"
+    "ImgArea ImgArea"
+    "footer footer ";
+    gap: 50px;
+}
+
+body.surprise .Parallax{
+    grid-area: Parallax;
+    background-image: url("assets/clown.jfif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+body.surprise .NoJobForYou{
+    grid-area: NoJobForYou;
+    background-color: yellow;
+    padding: 10px;
+}
+
+body.surprise .Parallax2{
+    grid-area: Parallax2;
+    background-image: url("assets/clown.jfif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+body.surprise .ImgArea{
+    grid-area: ImgArea;
+    background-color: gray;
+    padding-bottom: -50px;
+    margin-bottom: -50px;
+}
+
+body.surprise .ImgArea .flexContainer{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: auto;
+    padding-top: 10px;
+    gap: 15px;
+}
+
+body.surprise .ImgArea img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
