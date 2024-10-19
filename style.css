@@ -433,6 +433,9 @@ body.surprise .NoJobForYou{
     grid-area: NoJobForYou;
     background-color: yellow;
     padding: 10px;
+    text-align: center;
+    padding-left: 500px;
+    padding-right: 500px;
 }
 
 body.surprise .Parallax2{
