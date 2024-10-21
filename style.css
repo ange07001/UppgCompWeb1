@@ -5,7 +5,10 @@
 
 body{
     background-color: rgb(237, 237, 237);
-    font-family:monospace;
+    font-family:"Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 body.index .Container{
@@ -46,6 +49,7 @@ body nav{
     margin-top: -50px;
     box-shadow: 0 10px 15px -10px gray;
     overflow: hidden;
+    font-weight: 600;
 }
 body nav a{
     float: left;
@@ -85,6 +89,11 @@ body.index .Item1{
     box-shadow: 1px 1px 15px gray;
     padding: 10px;
 }
+
+body.index .Item1 p{
+    padding-top: 10px;
+}
+
 body.index .Item2{
     grid-area: Item2;
     background-color: #457b9d;
@@ -93,6 +102,11 @@ body.index .Item2{
     box-shadow: 1px 1px 15px gray;
     padding: 10px;
 }
+
+body.index .Item2 p{
+    padding-top: 10px;
+}
+
 body.index .Item3{
     grid-area: Item3;
     background-color: #a8dadc;
@@ -100,6 +114,14 @@ body.index .Item3{
     border-radius: 20px;
     box-shadow: 1px 1px 15px gray;
     padding: 10px;
+}
+
+body.index .Item3 p{
+    padding-top: 10px;
+}
+
+body.index .Item3 ul{
+    padding-top: 10px;
 }
 
 body.index img{
@@ -268,6 +290,10 @@ body.career .WhyWorkHere{
     box-shadow: 1px 1px 15px gray;
 }
 
+body.career .WhyWorkHere p{
+    padding-top: 10px;
+}
+
 body.career .AvailableJobs{
     grid-area: AvailableJobs;
     background-color:  #a8dadc;
@@ -276,6 +302,10 @@ body.career .AvailableJobs{
     margin-right: 100px;
     border-radius: 20px;
     box-shadow: 1px 1px 15px gray;
+}
+
+body.career .AvailableJobs ul{
+    padding-top: 10px;
 }
 
 body.career .JobRequirements{
@@ -288,7 +318,13 @@ body.career .JobRequirements{
     box-shadow: 1px 1px 15px gray;
 }
 
+body.career .JobRequirements p{
+    padding-top: 10px;
+}
 
+body.career .JobRequirements ul{
+    padding-top: 10px;
+}
 
 body.career .JobBenefits{
     grid-area: JobBenefits;
@@ -298,6 +334,10 @@ body.career .JobBenefits{
     margin-right: 100px;
     border-radius: 20px;
     box-shadow: 1px 1px 15px gray;
+}
+
+body.career .JobBenefits ul{
+    padding-top: 10px;
 }
 
 body.career .ApplyForJob{
@@ -350,6 +390,10 @@ body.about .OurMission{
     box-shadow: 1px 1px 15px gray;
 }
 
+body.about .OurMission p{
+    padding-top: 10px;
+}
+
 body.about .Offices{
     grid-area: Offices;
     background-color: #457b9d;
@@ -360,6 +404,10 @@ body.about .Offices{
     box-shadow: 1px 1px 15px gray;
 }
 
+body.about .Offices ul{
+    padding-top: 10px;
+}
+
 body.about .Contact{
     grid-area: Contact;
     background-color: #a8dadc;
@@ -368,6 +416,14 @@ body.about .Contact{
     margin-right: 100px;
     border-radius: 20px;
     box-shadow: 1px 1px 15px gray;
+}
+
+body.about .Contact p{
+    padding-top: 10px;
+}
+
+body.about .Contact ul{
+    padding-top: 5px;
 }
 
 body.about .OurMission img{
@@ -431,11 +487,11 @@ body.surprise .Parallax{
 
 body.surprise .NoJobForYou{
     grid-area: NoJobForYou;
-    background-color: yellow;
+    background: linear-gradient(135deg,yellow,orange);
     padding: 10px;
     text-align: center;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 body.surprise .Parallax2{
